@@ -31,20 +31,20 @@ export default function Layout({ children }: { children: React.ReactNode }) {
     >
       <Head>
         {/* Favicon */}
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="https://www.mentemaker.com.br/logo.png" />
 
         {/* Open Graph (Facebook, WhatsApp, etc.) */}
         <meta property="og:type" content="website" />
         <meta property="og:title" content="Mente Maker" />
         <meta property="og:description" content="Tecnologia e Programação" />
-        <meta property="og:image" content="/logo.png" />
+        <meta property="og:image" content="https://www.mentemaker.com.br/logo.png" />
         <meta property="og:url" content="https://www.mentemaker.com.br" />
 
         {/* Twitter Card */}
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Mente Maker" />
         <meta name="twitter:description" content="Tecnologia e Programação" />
-        <meta name="twitter:image" content="/logo.png" />
+        <meta name="twitter:image" content="https://www.mentemaker.com.br/logo.png" />
       </Head>
 
       <nav className="bg-gray-900 text-white sticky top-0 z-50">

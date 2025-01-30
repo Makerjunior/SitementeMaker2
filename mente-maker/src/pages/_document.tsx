@@ -5,21 +5,21 @@ export default function Document() {
     <Html lang="en">
       <Head>
          {/* Favicon */}
-         <link rel="icon" href="/logo.png" />
+         <link rel="icon" href="https://www.mentemaker.com.br/logo.png" />
           {/* <img src="/images/logo/logo.png" alt="Logo" /> */}
           
           {/* Open Graph (para compartilhamento no Facebook, WhatsApp, etc.) */}
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Mente Maker" />
           <meta property="og:description" content="Tecnologia, Robótica e Programação" />
-          <meta property="og:image" content="/logo.png" /> {/* Caminho do seu ícone ou imagem de destaque */}
+          <meta property="og:image" content="https://www.mentemaker.com.br/logo.png" /> {/* Caminho do seu ícone ou imagem de destaque */}
           <meta property="og:url" content="https://www.mentemaker.com.br" />
           
           {/* Twitter Card (para compartilhamento no Twitter) */}
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:title" content="Mente Maker" />
           <meta name="twitter:description" content="Tecnologia, Robótica e Programação" />
-          <meta name="twitter:image" content="/logo.png" />
+          <meta name="twitter:image" content="https://www.mentemaker.com.br/logo.png" />
 
         </Head>
       <body className="antialiased">
