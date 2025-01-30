@@ -21,7 +21,7 @@ export default function Programacao2025() {
 
           <div className="p-8">
             {/* Tags de categorização (Badges) */}
-             <div className="flex flex-wrap justify-center gap-2 mb-6">
+             <div className="flex flex-wrap justify-center gap-2 mb-6 ignore-reader">
               {["Carreira", "Tecnologia", "Futuro", "Programação"].map((tag) => (
                 <span
                   key={tag}
@@ -49,11 +49,11 @@ export default function Programacao2025() {
 
             {/* Metadados do Artigo */}
             <div className="flex items-center justify-center gap-6 text-gray-600 mb-10 text-sm">
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 ignore-reader">
                 <FaCalendar className="text-gray-500"/>
                   <time dateTime="2024-03-15">15 de Março de 2024</time>
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 ignore-reader">
                 <FaClock className="text-gray-500" />
                 <span>4 minutos de leitura</span>
               </div>
