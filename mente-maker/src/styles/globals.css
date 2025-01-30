@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .nav-link {
+    @apply px-3 py-2 rounded-md text-sm font-medium;
+    @apply hover:bg-gray-700 hover:text-white;
+    @apply transition-colors duration-200;
+  }
+
+  .mobile-nav-link {
+    @apply block px-3 py-2 rounded-md text-base font-medium;
+    @apply hover:bg-gray-700 hover:text-white;
+    @apply transition-colors duration-200;
+    @apply text-gray-300;
+  }
+
+  .card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden;
+    @apply hover:shadow-xl transition-shadow duration-300;
+    @apply flex flex-col;
+  }
+
+  .card-content {
+    @apply p-4 flex-grow;
+  }
+
+  .btn {
+    @apply px-4 py-2 rounded-md font-medium;
+    @apply transition-colors duration-200;
+  }
+
+  .btn-primary {
+    @apply bg-blue-600 text-white;
+    @apply hover:bg-blue-700;
+  }
+
+  .container-responsive {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .grid-responsive {
+    @apply grid gap-6;
+    @apply grid-cols-1 sm:grid-cols-2 lg:grid-cols-3;
+  }
+
+  .feature-card-hover {
+    @apply relative overflow-hidden;
+  }
+
+  .feature-card-hover::after {
+    content: '';
+    @apply absolute inset-0 bg-gradient-to-r opacity-0 transition-opacity duration-300;
+  }
+
+  .feature-card-hover:hover::after {
+    @apply opacity-10;
+  }
+
+  .group-hover-arrow {
+    @apply transform transition-transform duration-300;
+  }
+
+  .group:hover .group-hover-arrow {
+    @apply translate-x-2;
+  }
+}
+
+/* Ajustes para telas muito pequenas */
+@media (max-width: 360px) {
+  .nav-link, .mobile-nav-link {
+    @apply text-xs;
+    @apply px-2 py-1;
+  }
+}
+
+/* Ajustes para telas muito grandes */
+@media (min-width: 2000px) {
+  .container-responsive {
+    @apply max-w-7xl;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+/* Melhorias de acessibilidade */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Melhorias de leitura */
+@media (prefers-color-scheme: dark) {
+  .card {
+    @apply bg-gray-800 text-white;
+  }
+}
+
+/* Animação de brilho para os ícones */
+@keyframes glow {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.2);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.feature-icon {
+  animation: glow 2s infinite;
+}
