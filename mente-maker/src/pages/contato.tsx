@@ -6,37 +6,30 @@ const socialLinks = [
   {
     name: 'WhatsApp',
     icon: FaWhatsapp,
-    link: 'https://chat.whatsapp.com/seu-grupo',
+    link: 'https://chat.whatsapp.com/FGkU80peYjMFubHPiNScSm',
     color: 'bg-green-500 hover:bg-green-600',
     description: 'Entre para nosso grupo e participe das discussões'
   },
   {
     name: 'Discord',
     icon: FaDiscord,
-    link: 'https://discord.gg/seu-servidor',
+    link: 'https://discord.gg/ng9T89GzVD',
     color: 'bg-indigo-500 hover:bg-indigo-600',
     description: 'Faça parte da nossa comunidade no Discord'
   },
   {
     name: 'Instagram',
     icon: FaInstagram,
-    link: 'https://instagram.com/seu-perfil',
+    link: 'https://www.instagram.com/mente___maker',
     color: 'bg-pink-500 hover:bg-pink-600',
     description: 'Siga-nos para ver novidades e bastidores'
   },
   {
     name: 'TikTok',
     icon: FaTiktok,
-    link: 'https://tiktok.com/@seu-perfil',
+    link: 'https://www.tiktok.com/@mente.maker?lang=pt-BR',
     color: 'bg-black hover:bg-gray-800',
     description: 'Confira nossos vídeos curtos e tutoriais'
-  },
-  {
-    name: 'Email',
-    icon: FaEnvelope,
-    link: 'mailto:contato@mentemaker.com',
-    color: 'bg-blue-500 hover:bg-blue-600',
-    description: 'Entre em contato por email'
   }
 ];
 
