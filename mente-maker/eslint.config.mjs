@@ -24,6 +24,7 @@ export default [
       "no-unexpected-multiline": "off", // Ignora erros de parsing relacionados à sintaxe incorreta
       "no-undef": "off", // Ignora erros de variáveis não definidas (útil para o tipo de erro que você encontrou)
       "react/jsx-no-literals": "off", // Ignora erros em relação a literais dentro de JSX (se aplicável)
+      '@typescript-eslint/no-empty-object-type': 'off',
     },
   },
 ];
