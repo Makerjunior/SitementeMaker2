@@ -46,10 +46,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/b
 
 
 ## Aterar iconBase.d.ts
-
+Substituir o conteudo do arquivo iconBase.d.ts por esse conteudo 
 ````
 
 import * as React from "react";
+
 
 export interface IconTree {
     tag: string;
@@ -76,7 +77,6 @@ export type IconType = (props: IconBaseProps) => React.JSX.Element;
 export declare function IconBase(props: IconBaseProps & {
     attr?: Record<string, string>;
 }): React.JSX.Element;
-
 
 
 
